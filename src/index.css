@@ -1,0 +1,200 @@
+body {
+  text-align: center;
+  font-family: 'Fresca', sans-serif;
+  color: #1A432D;
+}
+
+h2, h3, button {
+  font-family: 'Fresca', sans-serif;
+  margin-bottom: 0;
+  font-weight: 300;
+}
+
+.box {
+  margin: auto;
+  width: 45%
+}
+
+@media (max-width: 888px) {
+  .box {
+    margin: auto;
+    width: 70%
+  }
+}
+
+@media (max-width: 510px) {
+  .box {
+    margin: auto;
+    width: 90%
+  }
+}
+
+p {
+  margin: 0px;
+}
+
+h1 {
+  font-family: 'Homemade Apple', cursive;
+  color: #1A432D;
+  padding-top: 45px;
+}
+
+ul {
+  text-align: center;
+  padding: 0;
+  margin: 0 auto;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 3px 3px 20px #aaa;
+}
+
+button.accordion {
+  font-size: 24px;
+  background-color: #015c2b;
+  color: #ddd;
+  cursor: pointer;
+  padding: 8px 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+button.accordion.active, button.accordion:hover {
+  background-color: #037337;
+  color: #eee;
+}
+
+div.panel {
+  padding: 0 18px;
+  background-color: white;
+}
+
+.ingredients {
+  white-space: pre-wrap;
+  text-align: left;
+  padding: 20px 0 20px 30px;
+  line-height: 1.8;
+}
+
+.ingredient-container {
+  position: relative;
+  color: #1A432D;
+  font-family: 'Homemade Apple', cursive;
+  background-color: #cdf7df;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200%;
+  margin: 0 auto;
+  background: rgba(45, 45, 45, 0.3);
+}
+
+.edit-background {
+  background: rgba(45, 45, 45, 0.3);
+}
+
+button:focus {
+  outline: 0;
+}
+
+.btn {
+  margin: 20px 10px 0 10px;
+  color: #eee;
+  font-weight: 400;
+  font-size: 18px;
+  border: 2px solid #1A432D;
+  border-radius: 3px;
+  padding: 3px 6px 3px 6px;
+  background-color: #1A432D;
+  transition: 0.4s ease-out;
+}
+
+.btn-edit {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 14px;
+  background-color: #058dba;
+  border: 2px solid #058dba;
+  padding: 2px 4px;
+  margin: 0;
+}
+
+.btn-delete {
+  background-color: darkred;
+  margin-top: 10px;
+  border: 2px solid darkred;
+}
+
+.btn:hover {
+  background-color: #fff;
+  color: #1A432D;
+  letter-spacing: 1px;
+}
+
+.btn-edit:hover {
+  color: #058dba
+}
+
+.btn-delete:hover {
+  color: darkred;
+}
+
+.add-container, .edit-container {
+  width: 480px;
+  padding: 20px 10px;
+  border-radius: 6px;
+  overflow: hidden;
+  background-color: #a8dbed;
+  opacity: 1 !important;
+  z-index: 999;
+  margin: 0 auto;
+  margin-top: 140px;
+  box-shadow: 4px 10px 50px #333;
+}
+
+.add-container h3, .edit-container h3 {
+  margin: 0;
+}
+
+input[type=text] {
+  margin: 20px 5px;
+  margin-bottom: 0;
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 6px;
+  width: 190px;
+  border: 0;
+}
+
+.btn-add-recipe {
+  margin: 30px 0 15px 0;
+}
+
+.sig-container {
+  margin-top: 150px;
+}
+
+#signature {
+  color: #1A432D;
+}
+
+a {
+  text-decoration: none;
+  color: #1A432D;
+}
+
+@media (max-width: 650px) {
+  .add-container, .edit-container {
+    width: 65%;
+  }
+}
